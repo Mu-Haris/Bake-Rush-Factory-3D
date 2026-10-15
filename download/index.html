@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Bake Rush Factory 3D</title>
+<meta name="description" content="Download Bake Rush Factory 3D on the App Store.">
+<link rel="icon" href="../assets/app-icon.png">
+<link rel="apple-touch-icon" href="../assets/app-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/store.js"></script>
+<script>if (window.APP_STORE_URL) location.replace(window.APP_STORE_URL);</script>
+</head>
+<body>
+<main class="wrap" style="text-align:center;padding-top:64px">
+  <img src="../assets/app-icon.png" alt="Bake Rush Factory 3D app icon" width="96" height="96" style="border-radius:22px">
+  <h1>Bake Rush Factory 3D</h1>
+  <p id="status" class="muted">Opening the App Store…</p>
+  <p><a class="button" id="go" href="../">Visit the game page</a></p>
+</main>
+<script>
+  if (!window.APP_STORE_URL) {
+    document.getElementById("status").textContent = "Coming soon to the App Store. Check back shortly!";
+  } else {
+    document.getElementById("go").href = window.APP_STORE_URL;
+    document.getElementById("go").textContent = "Open in the App Store";
+  }
+</script>
+</body>
+</html>
